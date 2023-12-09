@@ -1,6 +1,6 @@
 <h1 align="center"><b>notes-app-back-end</b></h1>
 
-This is learning course projects from 'Belajar Membuat Aplikasi Backend Untuk Pemula' at Dicoding.
+This is learning course projects from 'Belajar Fundamental Aplikasi Back-End' at Dicoding. Mid-level version.
 
 ## Tech Stack
 
@@ -8,22 +8,22 @@ This is learning course projects from 'Belajar Membuat Aplikasi Backend Untuk Pe
 | ------------------ |
 | NodeJS             |
 | Hapi               |
-| Eslint: StandardJS |
+| Eslint: AirBnB     |
 | Nodemon            |
 | Nanoid             |
 
 ## Code Structure
 
 ```
-├── node_modules
 ├── src
-│ ├── handler.js      // load whole handler functions which used in routes folder
-│ ├── notes.js        // load the notes data in an array object
-│ ├── routes.js       // load the routing server configuration
-│ └── server.js       // load the code, running the server
-├── .eslintrc.json
-├── .gitignore
-├── package-lock.json
-├── package.json
-└── README.md
+│ ├── api                            // load folders that is Hapi plugin.
+│ │ └── notes                        // notes plugin. url/notes.
+│ │   ├── handler.js                 // load notes function handler which is used in routes file. (responses for client)
+│ │   ├── index.js                   // where Hapi plugin created.
+│ │   └── routes.js                  // load the routing notes configuration.
+│ ├── services                       // load whole functions that used for write, fetch, change, or delete a resource. (CRUD operation in resource)
+│ │ └── inMemory
+│ │   └── NotesService.js
+│ └── server.js                      // load the code for create, configure, and run HTTP server using Hapi, registration will happen in here.
+└── package.json
 ```
