@@ -11,6 +11,7 @@ This is learning course projects from 'Belajar Fundamental Aplikasi Back-End' at
 | Eslint: AirBnB     |
 | Nodemon            |
 | Nanoid             |
+| Joi Validator      |
 
 ## Code Structure
 
@@ -22,8 +23,12 @@ This is learning course projects from 'Belajar Fundamental Aplikasi Back-End' at
 │ │   ├── index.js                   // where Hapi plugin created.
 │ │   └── routes.js                  // load the routing notes configuration.
 │ ├── services                       // load whole functions that used for write, fetch, change, or delete a resource. (CRUD operation in resource)
-│ │ └── inMemory
-│ │   └── NotesService.js
+│ │ └── in-memory
+│ │   └── notes-service.js
+│ ├── validator                      // validate inputted data payload.
+│ │ └── notes
+│ │   ├── index.js                   // create function as validator.
+│ │   └── schema.js                  // for create and write notes data schema.
 │ └── server.js                      // load the code for create, configure, and run HTTP server using Hapi, registration will happen in here.
 └── package.json
 ```
