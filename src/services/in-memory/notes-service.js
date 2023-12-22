@@ -1,5 +1,5 @@
 const { nanoid } = require('nanoid');
-const InvarianError = require('../../exceptions/invariant-error');
+const InvariantError = require('../../exceptions/invariant-error');
 const NotFoundError = require('../../exceptions/not-found-error');
 
 class NotesService {
@@ -20,7 +20,7 @@ class NotesService {
     const isSuccess = this._notes.filter((note) => note.id === id).length > 0;
 
     if (!isSuccess) {
-      throw new InvarianError('Catatan gagal ditambahkan');
+      throw new InvariantError('Catatan gagal ditambahkan');
     }
 
     return id;
