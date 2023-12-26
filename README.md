@@ -15,6 +15,7 @@ This is learning course projects from 'Belajar Fundamental Aplikasi Back-End' at
 | Node Postgres            |
 | Node Pg Migrate          |
 | Dotenv                   |
+| Bcrypt                   |
 
 ## Code Structure
 
