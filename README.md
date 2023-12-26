@@ -22,10 +22,8 @@ This is learning course projects from 'Belajar Fundamental Aplikasi Back-End' at
 ```
 ├── src/
 │ ├── api/                            // load folders that is Hapi plugin.
-│ │ └── notes/                        // notes plugin. url/notes.
-│ │   ├── handler.js                  // load notes function handler which is used in routes file. (responses for client)
-│ │   ├── index.js                    // where Hapi plugin created.
-│ │   └── routes.js                   // load the routing notes configuration.
+│ │ ├── notes/                        // notes plugin. url/notes.
+│ │ └── users/                        // users plugin. url/users.
 │ ├── exceptions/                     // custom error exception.
 │ │ ├── client-error.js
 │ │ ├── invariant-error.js
@@ -34,13 +32,13 @@ This is learning course projects from 'Belajar Fundamental Aplikasi Back-End' at
 │ │ ├── in-memory/
 │ │ │ └── notes-service.js
 │ │ └── postgres/
-│ │   └── notes-service.js
-│ ├── utils/                          // mapping object of notes structure.
+│ │   ├── notes-service.js
+│ │   └── users-service.js
+│ ├── utils/                          // mapping object of models structure.
 │ │ └── index.js
 │ ├── validator/                      // validate inputted data payload.
-│ │ └── notes/
-│ │   ├── index.js                    // create function as validator.
-│ │   └── schema.js                   // for create and write notes data schema.
+│ │ ├── notes/
+│ │ └── users/
 │ └── server.js                       // load the code for create, configure, and run HTTP server using Hapi, registration will happen in here.
 └── package.json
 ```
